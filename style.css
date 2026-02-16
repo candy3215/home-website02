@@ -1,0 +1,40 @@
+:root{
+  --bg:#fff8f0;
+  --card:#ffffff;
+  --muted:#6b6b6b;
+  --accent1:#2db84d;
+  --accent2:#ff6b6b;
+  --accent3:#ffd166;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:#1b1b1b}
+.container{max-width:var(--container);margin:0 auto;padding:1rem}
+.site-header{background:linear-gradient(90deg,#ffffffcc, #f7fff7);box-shadow:0 1px 0 rgba(0,0,0,0.04)}
+.header-row{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 0}
+.logo{margin:0;font-size:1.25rem;color:var(--accent1)}
+.nav a{margin-left:1rem;text-decoration:none;color:var(--muted);padding:0.25rem 0}
+.nav .active{color:#111;font-weight:600}
+.hero{padding:3rem 0;background:linear-gradient(135deg,var(--accent3),#e8fff0);text-align:center}
+.hero h2{margin:0 0 0.25rem;font-size:2rem}
+.hero p{margin:0 0 1rem;color:var(--muted)}
+.btn{display:inline-block;padding:0.6rem 1rem;background:var(--accent1);color:#fff;border-radius:8px;text-decoration:none}
+.features{padding:2rem 0}
+.features h3{margin:0 0 1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem}
+.card{background:var(--card);padding:1rem;border-radius:12px;box-shadow:0 6px 18px rgba(34,34,34,0.04);text-align:center}
+.thumb{width:64px;height:64px;border-radius:50%;margin:0 auto 0.75rem}
+.veg1{background:linear-gradient(135deg,#ff7b6b,#ffb199)}
+.veg2{background:linear-gradient(135deg,#7be495,#2db84d)}
+.veg3{background:linear-gradient(135deg,#ffd166,#ff9f1c)}
+.veg4{background:linear-gradient(135deg,#8ec5ff,#6b9eff)}
+.card h4{margin:0 0 0.25rem}
+.card p{margin:0;color:var(--muted)}
+.menu-list{padding:2rem 0}
+.menu-item{display:flex;gap:1rem;align-items:center;background:var(--card);padding:0.75rem;border-radius:10px}
+.menu-item .thumb{width:56px;height:56px}
+.item-body h4{margin:0;font-size:1rem}
+.item-body p{margin:0;color:var(--muted);font-size:0.95rem}
+.site-footer{padding:1rem 0;margin-top:2rem;border-top:1px solid #f0f0f0}
+.footer-row{display:flex;justify-content:space-between;align-items:center}
+@media(max-width:600px){.header-row{flex-direction:column;gap:0.5rem}.footer-row{flex-direction:column;gap:0.5rem}}
